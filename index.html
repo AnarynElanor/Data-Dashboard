@@ -1,0 +1,152 @@
+    <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Data Dashboard</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+ <body> 
+<header>
+
+ <img src="assets/images/logo-laboratoria.svg" alt="logo">
+</header>
+
+
+<main>
+  <section class = filters>
+   <div>
+      <section id="menus-filter" onchange ="sede(event)" name="promocion">
+        <div>
+          <select id="filtro-sedes" name="#">
+            <option value="" hidden>Selecciona una opción</option>
+            <optgroup label="Arequipa">
+              <option value="AQP" data-sede="AQP" data-generacion="2016-2">AQP 2016 - 2</option>
+              <option value="AQP" data-sede="AQP" data-generacion="2017-1">AQP 2017 - 1</option>
+            </optgroup>
+            <optgroup label="México">
+              <option value="CDMX" data-sede="CDMX" data-generacion="2017-1">CDMX 2017 - 1</option>
+              <option value="CDMX" data-sede="CDMX" data-generacion="2017-2">CDMX 2017 - 2</option>
+            </optgroup>
+            <optgroup label="Lima">
+              <option value="LIM" data-sede="LIM" data-generacion="2016-2">LIM 2016 - 1</option>
+              <option value="LIM" data-sede="LIM" data-generacion="2017-1">LIM 2017 - 2</option>
+              <option value="LIM" data-sede="LIM" data-generacion="2017-2">LIM 2017 - 3</option>
+            </optgroup>
+            <optgroup label="Chile">
+              <option value="SCL" data-sede="SCL" data-generacion="2016-2">SCL 2016 - 1</option>
+              <option value="SCL" data-sede="SCL" data-generacion="2017-1">SCL 2017 - 2</option>
+              <option value="SCL" data-sede="SCL" data-generacion="2017-2">SCL 2017 - 3</option>
+            </optgroup>
+          </select>
+        </div>
+      </section>  
+    </div>
+  </section>
+</main>
+
+<nav class = "navigator">
+<ul>
+
+ <li><p value = "overview">OVERVIEW</p><hr class = "sub"> </li><span></span>
+ <li><p  value = "Students"> STUDENTS </p> <hr class ="none"> </li>
+ <li><p  value = "teachers"> TEACHERS </p> <hr class ="none"</li>
+
+  </ul
+>
+</nav>
+
+
+
+<!--<select class="sede-filter" onchange ="sede(event)" name="promocion">
+ <option value="">seleciona  sede</option>
+ <option value="AQP">Arequipa</option>
+ <option value="Lim">Lima</option>
+<option value="CDMX">Mexico</option>
+ <option value="SCL">Santiago  Chile</option>
+  </select>
+<select class="ciclo-filter" name="generations">
+
+    <option value="">Generations</option>
+
+      <option value="">Selecciona todo</option>
+
+       <option value="2016-2">2016-2</option>
+
+      <option value="2017-1">2017-1</option>
+
+     <option value="2017-2">2017-2</option>
+</select> -->
+
+
+<section  id = container >
+
+  <div id="datos">     <!--promedio  de  score-->
+
+    <div class="container-overview">
+
+      <p>MEET ACHIEVEMENT</p>  !--Promedio toTAL porcentaje-->
+    <!--Promedio total en porcentaje-->
+     <p>80%</p>
+     </span>
+      <!--Insertar grafico promedio de notas HSE-->
+     <img src="assets/images/circle-graphic.png" alt="grafico">
+    <!--Insertar datos numericos promedio notas HSE-->
+     <table>
+      <tbody>
+      <tr>
+     <td>Students that meet the target</td>
+     <!--Insertar porcentaje de alumnas que paso el minimo hse por sprint-->
+      <td>20</td>
+     <!--Insertar numero de alumnas que paso el minimo hse por sprint-->
+      <td>40</td>
+       </tr>
+     <tr>
+        <td>Students that not meet the target</td>
+      <!--Insertar porcentaje de alumnas que no paso el minimo hse por sprint-->
+        <td>10%</td>
+      <!--Insertar numero de alumnas que no paso el minimo hse por sprint-->
+       <td>13</td>
+      </tr>
+
+   <div id=notas-hse>
+   <span>
+    <p>HSE ACHIEVEMENT</p>
+     <!--Promedio total en porcentaje-->
+      <p>80%</p>
+      </span>
+       <!--Insertar grafico promedio de notas HSE-->
+      <img src="assets/images/circle-graphic.png" alt="grafico">
+     <!--Insertar datos numericos promedio notas HSE-->
+      <table>
+       <tbody>
+       <tr>
+      <td>Students that meet the target</td>
+      <!--Insertar porcentaje de alumnas que paso el minimo hse por sprint-->
+       <td>90%</td>
+      <!--Insertar numero de alumnas que paso el minimo hse por sprint-->
+       <td>117</td>
+        </tr>
+      <tr>
+         <td>Students that not meet the target</td>
+       <!--Insertar porcentaje de alumnas que no paso el minimo hse por sprint-->
+         <td>10%</td>
+       <!--Insertar numero de alumnas que no paso el minimo hse por sprint-->
+        <td>13</td>
+       </tr>
+       </tbody>
+       </table>
+        </div>
+        <div id=notas-tech>
+         <span>
+
+
+
+
+
+		<!-- Base de datos -->
+		<script src="./js/data.js"></script>
+		<!-- Aquí va tus archivos JS -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
